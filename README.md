@@ -4,7 +4,7 @@
 
 # 🚀 **SimVTP**: Simple Video Text Pre-training with Masked Autoencoders
 
-<a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a> &emsp; [![License](https://img.shields.io/badge/arxiv-2212.03490-green)](https://arxiv.org/pdf/2212.03490) &emsp; [![Python](https://img.shields.io/badge/Python-3.7-blue.svg)](#PyTorch)
+<a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a> [![License](https://img.shields.io/badge/arxiv-2212.03490-green)](https://arxiv.org/pdf/2212.03490) [![Python](https://img.shields.io/badge/Python-3.7-blue.svg)](#PyTorch)
 
 </div>
 
