@@ -92,3 +92,11 @@ The majority of this project is released under the CC-BY-NC 4.0 license as found
 This project is built upon [MAE-pytorch](https://github.com/pengzhiliang/MAE-pytorch) and [VideoMAE](https://github.com/MCG-NJU/VideoMAE). Thanks to the contributors of these great codebases.
 
 ## ✏️ Citation
+```bash
+@article{ma2022simvtp,
+  title={SimVTP: Simple Video Text Pre-training with Masked Autoencoders},
+  author={Ma, Yue and Yang, Tianyu and Shan, Yin and Li, Xiu},
+  journal={arXiv preprint arXiv:2212.03490},
+  year={2022}
+}
+``` 
