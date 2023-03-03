@@ -33,11 +33,11 @@ Our SimVTP has several properties:
 | RegionLearner  | ImageNet           | WebVid2M+CC3M   | 5.5M   | 36.3 | 63.9 | 72.5 | 3 | 
 | LocVTP  | ImageNet           | WebVid2M+CC3M   | 5.5M   | 36.5 | 64.3 | 76.8 | 3 | 
 | BFormer  | ImageNet           | WebVid2M+CC3M   | 5.5M   | 37.6 | 64.8 | 75.1 | 3 | 
-| **SimVTP(ours)**  | Kinetics           | WebVid2M   | 2.5M   | **53.6** | **81.9** | **90.7** | **3** | 
+| **SimVTP(ours)**  | Kinetics           | WebVid2M   | 2.5M   | **53.6** | **82.8** | **90.8** | **1** | 
 
 
 
-<!-- ## 🔨 Dependencies and Installation
+## 🔨 Dependencies and Installation
 
 
 - Python >= 3.6 
@@ -47,7 +47,7 @@ Our SimVTP has several properties:
 ### ⛺ Installation
 1. Clone repo
     ```bash
-    git clone XXXX
+    git clone git@github.com:mayuelala/SimVTP.git
     cd SimVTP
     ```
 2. Install dependent packages
@@ -79,7 +79,7 @@ We provide the pretrained weights and finetuned weight on msrvtt in google drive
 
 |  Method   | Backbone | Epoch |  Pre-train |   Fine-tune | R@1 |
 | :------:  | :------: | :---: | :---: | :-----: | :---: | 
-| SimVTP    | ViT-B    | 200   | [script](scripts/pretrain_webvid.sh)/[log](https://drive.google.com/file/d/1fbmQtp3UUw9fro3MVkKCW62Ib_HlZvNz/view?usp=sharing)/[checkpoint](https://drive.google.com/file/d/1nU-H1u3eJ-VuyCveU7v-WIOcAVxs5Hww/view?usp=sharing) | [script](scripts/finetune_msrvtt.sh)/[log](https://drive.google.com/file/d/1fbmQtp3UUw9fro3MVkKCW62Ib_HlZvNz/view?usp=sharing)/[checkpoint](https://drive.google.com/file/d/1nU-H1u3eJ-VuyCveU7v-WIOcAVxs5Hww/view?usp=sharing) | 53.6 | -->
+| SimVTP    | ViT-B    | 200   | [script](scripts/pretrain_webvid.sh)/[log](https://drive.google.com/drive/folders/1ln0ISwm6y12bUKxFH6AJnWDdE9Llj74Y?usp=share_link)/[checkpoint](https://drive.google.com/drive/folders/1ln0ISwm6y12bUKxFH6AJnWDdE9Llj74Y?usp=share_link) | [script](scripts/finetune_msrvtt.sh)/[log](https://drive.google.com/drive/folders/1ln0ISwm6y12bUKxFH6AJnWDdE9Llj74Y?usp=share_link)/[checkpoint](https://drive.google.com/drive/folders/1ln0ISwm6y12bUKxFH6AJnWDdE9Llj74Y?usp=share_link) | 53.6 |
 
  ## 👀 Visualization
 We provide the script for visualization in [vis.sh](scripts/vis.sh). Though not the exact same as original texts, the reconstructed texts are plausible and in harmony with the video content. Sometimes, they are even more accurate than original texts, like the `white cat` and `little boy` in the second and third columns
