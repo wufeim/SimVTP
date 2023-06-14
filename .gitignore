@@ -1,0 +1,6 @@
+__pycache__/*
+exp/*
+webvid/*
+slurm-*.out
+bert-base-uncased-vocab/*
+videomae_weights/*
