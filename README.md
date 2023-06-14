@@ -8,6 +8,30 @@
 
 </div>
 
+## Notes by Wufei
+
+1. Install environment.
+
+```sh
+conda create -n simvtp pytorch=1.12.1 cudatoolkit=11.6 torchvision torchaudio jupyterlab --strict-channel-priority --override-channels -c https://aws-pytorch.s3.us-west-2.amazonaws.com -c pytorch -c nvidia -c conda-forge
+conda activate simvtp
+pip install timm==0.4.12 decord opencv-python tensorboardX einops transformers gdown
+```
+
+2. Download VideoMAE pretrained weights and modify the path in `run_simvtp_pretraining.py:L184`.
+
+```sh
+gdown https://drive.google.com/file/d/1tEhLyskjb755TJ65ptsrafUG2llSwQE1/view?usp=sharing --fuzzy
+mkdir videomae_weights && mv checkpoint.pth videomae_weights/k400_vitb_1600_pretrain.pth
+```
+
+3. Download `vocab.txt` and modify the path to `vocab.txt` in `run_simvtp_vis.py:L159`.
+
+```sh
+wget https://huggingface.co/bert-base-uncased/resolve/main/vocab.txt
+mkdir bert-base-uncased-vocab && mv vocab.txt bert-base-uncased-vocab/vocab.txt
+```
+
 ## 🍃 Abstract
 SimVTP: a Simple Video-Text Pretraining framework via masked autoencoders. We randomly mask out the spatial-temporal tubes of input video and the word tokens of input text and then feed them into a unified autencoder to reconstruct the missing pixels and words. 
 
