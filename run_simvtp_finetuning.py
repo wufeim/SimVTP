@@ -446,7 +446,7 @@ def main(args, ds_init):
     print(f"Start training for {args.epochs} epochs")
     start_time = time.time()
     max_accuracy = 0.0
-    tokenizer = transformers.AutoTokenizer.from_pretrained('/apdcephfs/private_mayuema/bert', TOKENIZERS_PARALLELISM=False)
+    tokenizer = transformers.AutoTokenizer.from_pretrained('bert-base-uncased', TOKENIZERS_PARALLELISM=False)
     evl_metrics = [getattr(module_metric, met) for met in ['v2t_metrics','t2v_metrics']]
     allgather = AllGather.apply
     n_gpu = utils.get_world_size()

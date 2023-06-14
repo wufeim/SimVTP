@@ -224,7 +224,7 @@ class VisionTransformer(nn.Module):
 
         self.apply(self._init_weights)
         
-        self.text_embeddings = AutoModel.from_pretrained('/apdcephfs/private_mayuema/bert').embeddings
+        self.text_embeddings = AutoModel.from_pretrained('bert-base-uncased').embeddings
         print('load bert offical weight for text_encoder.text_embeddings successful ......')
 
     def _init_weights(self, m):

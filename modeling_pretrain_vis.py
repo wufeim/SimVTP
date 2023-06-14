@@ -250,7 +250,7 @@ class PretrainVisionTransformer(nn.Module):
 
         trunc_normal_(self.mask_token, std=.02)
 
-        self.text_embeddings = AutoModelForMaskedLM.from_pretrained('/apdcephfs/private_mayuema/bert').bert.embeddings
+        self.text_embeddings = AutoModelForMaskedLM.from_pretrained('bert-base-uncased').bert.embeddings
         self.text_embeddings.train()
         print('text_embeddings has been initialized by bert weight.....')
 

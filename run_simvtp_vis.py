@@ -156,7 +156,7 @@ def main(args):
         pred_text = mlm_logits.view(-1, 30522)
         word_index = torch.argmax(mlm_logits[0],1)
         
-        with open("/apdcephfs/private_mayuema/bert/vocab.txt", "r") as f:
+        with open("/data/home/wufeim/research/SimVTP/bert-base-uncased-vocab/vocab.txt", "r") as f:
             data = f.readlines()
             data = [d.replace('\n', '').replace('\r', '') for d in data]
             

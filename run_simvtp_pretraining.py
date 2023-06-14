@@ -181,7 +181,7 @@ def main(args):
 
     #--------------------------------------------------------------------------------------------------------------------------------------------
     
-    load_weight_path = '/apdcephfs/private_mayuema/VideoMAE/checkpoints/K400_pretrain_1600_checkpoint.pth'
+    load_weight_path = '/data/home/wufeim/research/SimVTP/videomae_weights/k400_vitb_1600_pretrain.pth'
     # load_weight_path = 'YOUR_SIMVTP_PATH/checkpoints/K400_pretrain_1600_checkpoint.pth'
     if load_weight_path is not None:
 

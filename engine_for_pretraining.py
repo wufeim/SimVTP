@@ -19,7 +19,7 @@ def train_one_epoch(model: torch.nn.Module, data_loader: Iterable, optimizer: to
     metric_logger.add_meter('min_lr', utils.SmoothedValue(window_size=1, fmt='{value:.6f}'))
     header = 'Epoch: [{}]'.format(epoch)
     print_freq = 10
-    tokenizer = BertTokenizerFast.from_pretrained('/apdcephfs/private_mayuema/bert')
+    tokenizer = BertTokenizerFast.from_pretrained('bert-base-uncased')
 
 
     loss_func_v = nn.MSELoss()
